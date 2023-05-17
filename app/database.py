@@ -40,6 +40,7 @@ def update_task_entry(task_id: int , text: str):
     cursor.execute(query)
     postgres.commit()
     cursor.close()
+    
 
 
 def insert_new_task(text: str , id: int) -> int:
@@ -59,6 +60,7 @@ def insert_new_task(text: str , id: int) -> int:
 
 
 def remove_task_by_id(task_id: int) -> None:
+    
     """ remove entries based on task ID """
     try:
         cursor = postgres.cursor()

@@ -36,8 +36,6 @@ def update_status(task_id):
 
 
 
-
-
 @app.route("/create", methods=['POST'])
 def create():
     """ recieves post requests to add new task """
